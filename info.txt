@@ -9,3 +9,11 @@ API REST A => api.com/
 Origine de la Requete => api.com
 
 CROS Origin permet de spécifier la source des requetes, les verbes, les headers.
+
+Adresse ip api 5.196.29.43:8080
+
+Doc => 
+
+EndPoints => Users
+            => enregistrement d'utilisateur
+            => login
