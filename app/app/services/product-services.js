@@ -65,6 +65,15 @@ exports.accessories = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
   res.status(200).send({
+    message: "image of product after upload is "+ req.files.image 
+  })
+  
+};
+
+exports.accessories = (req, res) => {
+  console.log("Request : ", req.body)
+  validateRequest(req);
+  res.status(200).send({
     message: "example acessories product id "+ req.params.id 
   })
   
