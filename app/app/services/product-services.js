@@ -70,7 +70,7 @@ exports.accessories = (req, res) => {
   
 };
 
-exports.accessories = (req, res) => {
+exports.upload = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
   res.status(200).send({
