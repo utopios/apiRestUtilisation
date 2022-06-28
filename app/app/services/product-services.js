@@ -49,6 +49,9 @@ exports.update = (req, res) => {
   if(product != undefined) {
     product.name = req.body.name
     product.price = req.body.price
+    res.status(200).send({
+      message: "Product updated"
+    })
   }
   else {
     res.status(404).send({
