@@ -11,7 +11,7 @@ module.exports = function(app) {
   app.post("/api/auth/addproduct" , productServices.create);
 
   // find all product
-  app.get("/api/auth/getproducts", productServices.findAll);
+  app.get("/api/v1/products", productServices.findAll);
 
   // find product by product id
   app.post("/api/auth/getproductbyid", [jwtAuth.verifyToken], productServices.findOne);

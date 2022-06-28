@@ -15,5 +15,5 @@ Adresse ip api 5.196.29.43:8080
 Doc => 
 
 EndPoints => Users
-            => enregistrement d'utilisateur
+            => enregistrement d'utilisateur post /api/v1/signup
             => login
