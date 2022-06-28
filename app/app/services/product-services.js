@@ -70,6 +70,9 @@ exports.delete = (req, res) => {
   const product = database.products.find(p => p.id == id)
   if(product != undefined) {
     database.products = database.products.filter(p => p.id != id)
+    res.status(200).send({
+      message: "Product deleted"
+    })
   }
   else {
     res.status(404).send({
