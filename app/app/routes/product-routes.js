@@ -12,6 +12,7 @@ module.exports = function(app) {
 
   // find all product
   app.get("/api/v1/products", productServices.findAll);
+  app.get("/api/v1/products/:id/accessory", productServices.accessories);
 
   // find product by product id
   app.get("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.findOne);
