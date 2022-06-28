@@ -44,7 +44,7 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
-  const id = req.body.id;
+  const id = req.params.id;
   const product = database.products.find(p => p.id == id)
   if(product != undefined) {
     product.name = req.body.name

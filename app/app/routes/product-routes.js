@@ -17,7 +17,7 @@ module.exports = function(app) {
   app.get("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.findOne);
 
   // update product by product id
-  app.put("/api/auth/update", [jwtAuth.verifyToken], productServices.update);
+  app.put("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.update);
 
   // delete productby product id
   app.delete("/api/auth/delete", [jwtAuth.verifyToken], productServices.delete);
