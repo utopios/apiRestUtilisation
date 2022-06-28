@@ -14,7 +14,7 @@ module.exports = function(app) {
   app.get("/api/v1/products", productServices.findAll);
 
   // find product by product id
-  app.post("/api/auth/getproductbyid", [jwtAuth.verifyToken], productServices.findOne);
+  app.get("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.findOne);
 
   // update product by product id
   app.put("/api/auth/update", [jwtAuth.verifyToken], productServices.update);

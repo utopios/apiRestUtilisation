@@ -27,7 +27,7 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
-  const id = req.body.id;
+  const id = req.params.id;
   const product = database.products.find(p => p.id == id)
   if(product != undefined) {
     res.send(product)
