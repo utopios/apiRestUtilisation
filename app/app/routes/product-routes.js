@@ -8,7 +8,7 @@ module.exports = function(app) {
   });
 
   // add a product 
-  app.post("/api/auth/addproduct" , productServices.create);
+  app.post("/api/v1/products" , productServices.create);
 
   // find all product
   app.get("/api/v1/products", productServices.findAll);
