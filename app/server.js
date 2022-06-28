@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-
+const fileUpload = require("express-fileupload")
 var corsOptions = {
   origin: "*"
 };
@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ 
   extended: true 
 }));
-
+app.use(fileUpload())
 app.get("/", (req, res) => {
   res.json({ message: "This is a simple CRUD project using node js and postgres sql" });
 });
