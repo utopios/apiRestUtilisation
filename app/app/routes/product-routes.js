@@ -20,6 +20,6 @@ module.exports = function(app) {
   app.put("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.update);
 
   // delete productby product id
-  app.delete("/api/auth/delete", [jwtAuth.verifyToken], productServices.delete);
+  app.delete("/api/v1/products/:id", [jwtAuth.verifyToken], productServices.delete);
 
 };
