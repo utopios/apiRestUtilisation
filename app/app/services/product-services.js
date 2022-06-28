@@ -65,7 +65,7 @@ exports.upload = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
   res.status(200).send({
-    message: "image of product after upload is "+ req.files.image 
+    message: "image of product after upload is "+ req.files.image.name
   })
   
 };
