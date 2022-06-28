@@ -1,0 +1,11 @@
+API REST 
+type de résponses =>
+    1 - Text brut
+    2 - XML
+    3 - JSON
+
+API REST A => api.com/
+
+Origine de la Requete => api.com
+
+CROS Origin permet de spécifier la source des requetes, les verbes, les headers.
